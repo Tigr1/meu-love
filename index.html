@@ -1,0 +1,106 @@
+<DOCTYPE HTML5!>
+    <html lang="pt-BR">
+
+    <html>
+        <head><title>MEU AMOR</title></head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {text-align: center;
+                margin: 50; /* remove margem padrão do título */}
+            .retangulo {
+                width: 100%; /* largura do retângulo */
+                height: 150px; /* altura do retângulo */
+                background-color: #DC143C; /* cor de fundo do retângulo */
+                color: white; /* cor do texto dentro do retângulo */
+                padding: 20px; /* espaçamento interno do conteúdo */
+                border-radius: 10px; /* bordas arredondadas */
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* sombra */
+            }
+
+            body {
+                min-height: 100vh; /* altura mínima igual à altura da viewport */
+                overflow-y: auto; /* habilita a rolagem vertical quando necessário */
+                margin: 0; /* remove margens padrão do corpo */
+                font-family: Arial, sans-serif; /* fonte padrão para o corpo */
+                padding: 20px; /* espaço interno ao redor do conteúdo */
+        }
+
+            /* Animação de subida */
+            @keyframes subir {
+                0% {
+                    transform: translateY(100vh); /* posição inicial (abaixo da tela) */
+                }
+                100% {
+                    transform: translateY(-100vh); /* posição final (acima da tela) */
+                }
+            }
+
+            /* Posicionamento e estilos dos corações */
+            .coracao {
+                position: absolute; /* posicionamento absoluto para posicionar os corações */
+                width: 20px; /* largura do coração */
+                height: 20px; /* altura do coração */
+                background-color: #e74c3c; /* cor do coração (vermelho) */
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* clip-path para forma de coração */
+                animation: subir 2s linear infinite; /* animação de subida infinita */
+                z-index: 100; /* coloca os corações acima de outros conteúdos */
+            }
+
+            /* Posicionamento dos corações */
+            .coracao1 {
+                bottom: 0; /* posição inicial do primeiro coração (na parte inferior da tela) */
+                left: 5%; /* posição inicial do primeiro coração */
+                animation-delay: 0s; /* atraso da animação para que comece imediatamente */
+            }
+
+            .coracao2 {
+                bottom: 0; /* posição inicial do segundo coração (na parte inferior da tela) */
+                left: 15%; /* posição inicial do segundo coração */
+                animation-delay: 0.5s; /* atraso da animação para que comece após o primeiro */
+            }
+
+            .coracao3 {
+                bottom: 0; /* posição inicial do terceiro coração (na parte inferior da tela) */
+                right: 5%; /* posição inicial do terceiro coração */
+                animation-delay: 1s; /* atraso da animação para que comece após os dois primeiros */
+            }
+
+            .coracao4 {
+                bottom: 0; /* posição inicial do quarto coração (na parte inferior da tela) */
+                right: 15%; /* posição inicial do quarto coração */
+                animation-delay: 1.5s; /* atraso da animação para que comece após os três primeiros */
+            }
+
+        </style>
+
+        <body>
+
+            <div class="retangulo">
+                <h1>Te Amo Meu Amor</h1>
+            </div>
+
+            <!-- Coração 1 -->
+        <div class="coracao coracao1"></div>
+
+        <!-- Coração 2 -->
+        <div class="coracao coracao2"></div>
+
+        <!-- Coração 3 -->
+        <div class="coracao coracao3"></div>
+
+        <!-- Coração 4 -->
+        <div class="coracao coracao4"></div>
+
+        <img src="C:\Users\Micro\OneDrive\Área de Trabalho\site\img\1.png" width="50%" height="400">
+        <img src="C:\Users\Micro\OneDrive\Área de Trabalho\site\img\2.png" width="49%" height="400">
+        <img src="C:\Users\Micro\OneDrive\Área de Trabalho\site\img\3.png" width="50%" height="400">
+        <img src="C:\Users\Micro\OneDrive\Área de Trabalho\site\img\4.png" width="49%" height="400">
+        <img src="C:\Users\Micro\OneDrive\Área de Trabalho\site\img\5.png" width="50%" height="400">
+        <img src="C:\Users\Micro\OneDrive\Área de Trabalho\site\img\6.png" width="49%" height="400">
+
+
+
+        </body>
+
+    </html>
