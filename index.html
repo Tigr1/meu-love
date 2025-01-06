@@ -1,106 +1,62 @@
-<DOCTYPE HTML5!>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagem Para Minha Vida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Seção 1 -->
+  <section class="section1">
+    <div class="emoji-bg">
+      <span>❤</span>
+      <span>💕</span>
+      <span>💛</span>
+      <span>🥰</span>
+      <span>💜</span>
+    </div>
+    <img src="img/Victor e Luana.jpg" alt="Descrição da imagem" class="image">
+    <div class="text-box">
+      <h1 class="main-title">Para Mnha Vida</h1>
+      <p>
+        Luana,
+        Você me encantou desde sua primeira Mensagem, saber que estamos juntos a mais de 7 meses me deixa tão feliz, com você me sinto cada dia mais vivo, e da gosto de se viver todos os dias, sabendo que no final dele estarei com você.
 
-    <html>
-        <head><title>MEU AMOR</title></head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            h1 {text-align: center;
-                margin: 50; /* remove margem padrão do título */}
-            .retangulo {
-                width: 100%; /* largura do retângulo */
-                height: 150px; /* altura do retângulo */
-                background-color: #DC143C; /* cor de fundo do retângulo */
-                color: white; /* cor do texto dentro do retângulo */
-                padding: 20px; /* espaçamento interno do conteúdo */
-                border-radius: 10px; /* bordas arredondadas */
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* sombra */
-            }
+        Saber que você está gostando de mim como eu gosto de você é algo que me enche de alegria. Tudo o que faço por você, seja ir pra escola, caminhar até sua casa ou passar horas conversando, faço porque você é especial para mim. E saber que isso te faz sentir bem me mostra o quanto vale a pena cada momento ao seu lado.
 
-            body {
-                min-height: 100vh; /* altura mínima igual à altura da viewport */
-                overflow-y: auto; /* habilita a rolagem vertical quando necessário */
-                margin: 0; /* remove margens padrão do corpo */
-                font-family: Arial, sans-serif; /* fonte padrão para o corpo */
-                padding: 20px; /* espaço interno ao redor do conteúdo */
-        }
+        Não há nada de errado com você, meu amor. Seus cabelos lindos, seu jeito único e verdadeiro são o que fazem de você uma pessoa maravilhosa. Não deixe que os julgamentos ou opiniões de outras pessoas apaguem o brilho que você tem. Seu olhar, sua essência, tudo em você é único e merece ser valorizado.
 
-            /* Animação de subida */
-            @keyframes subir {
-                0% {
-                    transform: translateY(100vh); /* posição inicial (abaixo da tela) */
-                }
-                100% {
-                    transform: translateY(-100vh); /* posição final (acima da tela) */
-                }
-            }
+        Quero que saiba que estarei sempre aqui, não importa o que aconteça. Você não está sozinha, e espero que juntos possamos construir momentos que deixem o passado para trás e façam o presente valer a pena.
 
-            /* Posicionamento e estilos dos corações */
-            .coracao {
-                position: absolute; /* posicionamento absoluto para posicionar os corações */
-                width: 20px; /* largura do coração */
-                height: 20px; /* altura do coração */
-                background-color: #e74c3c; /* cor do coração (vermelho) */
-                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* clip-path para forma de coração */
-                animation: subir 2s linear infinite; /* animação de subida infinita */
-                z-index: 100; /* coloca os corações acima de outros conteúdos */
-            }
+        Obrigado por confiar em mim, por compartilhar quem você realmente é e por permitir que eu faça parte da sua vida.
 
-            /* Posicionamento dos corações */
-            .coracao1 {
-                bottom: 0; /* posição inicial do primeiro coração (na parte inferior da tela) */
-                left: 5%; /* posição inicial do primeiro coração */
-                animation-delay: 0s; /* atraso da animação para que comece imediatamente */
-            }
+        Com todo o carinho,
+      </p>
+      <p>Com carinho,<br>Seu Eterno Maridão</p>
+    </div>
+  </section>
 
-            .coracao2 {
-                bottom: 0; /* posição inicial do segundo coração (na parte inferior da tela) */
-                left: 15%; /* posição inicial do segundo coração */
-                animation-delay: 0.5s; /* atraso da animação para que comece após o primeiro */
-            }
+  <!-- Seção 2 -->
+  <section class="section2">
+    <h2>Compartilhando momentos há</h2>
+    <div id="timer">
+      <div><span id="years">00</span><br>anos</div>
+      <div><span id="months">00</span><br>meses</div>
+      <div><span id="days">00</span><br>dias</div>
+      <div><span id="hours">00</span><br>horas</div>
+      <div><span id="minutes">00</span><br>minutos</div>
+      <div><span id="seconds">00</span><br>segundos</div>
+    </div>
+    <p>Desde 09 de junho de 2024</p>
+  </section>
 
-            .coracao3 {
-                bottom: 0; /* posição inicial do terceiro coração (na parte inferior da tela) */
-                right: 5%; /* posição inicial do terceiro coração */
-                animation-delay: 1s; /* atraso da animação para que comece após os dois primeiros */
-            }
+  <!-- Seção 3 -->
+  <section class="section3">
+    <h2>Última seção</h2>
+    <p>Mais texto para o site descer!</p>
+  </section>
 
-            .coracao4 {
-                bottom: 0; /* posição inicial do quarto coração (na parte inferior da tela) */
-                right: 15%; /* posição inicial do quarto coração */
-                animation-delay: 1.5s; /* atraso da animação para que comece após os três primeiros */
-            }
-
-        </style>
-
-        <body>
-
-            <div class="retangulo">
-                <h1>Te Amo Meu Amor</h1>
-            </div>
-
-            <!-- Coração 1 -->
-        <div class="coracao coracao1"></div>
-
-        <!-- Coração 2 -->
-        <div class="coracao coracao2"></div>
-
-        <!-- Coração 3 -->
-        <div class="coracao coracao3"></div>
-
-        <!-- Coração 4 -->
-        <div class="coracao coracao4"></div>
-
-        <img src="img\1.png" width="50%" height="400">
-        <img src="img\2.png" width="49%" height="400">
-        <img src="img\3.png" width="50%" height="400">
-        <img src="img\4.png" width="49%" height="400">
-        <img src="img\5.png" width="50%" height="400">
-        <img src="img\6.png" width="49%" height="400">
-
-
-
-        </body>
-
-    </html>
+  <script src="script.js"></script>
+</body>
+</html>

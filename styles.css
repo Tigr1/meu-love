@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .section1, .section2, .section3 {
+    text-align: center;
+    padding: 20px;  /* Menos padding para telas menores */
+    height: auto;  /* Permite o ajuste automático da altura */
+  }
+  
+  .image {
+    width: 200px;
+    border-radius: 10px;
+    max-width: 100%;  /* Ajusta a largura para não ultrapassar o limite da tela */
+    height: auto;  /* Ajusta automaticamente a altura */
+  }
+  
+  .text-content h1 {
+    color: red;
+    font-size: 2em;
+  }
+  
+  #timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #timer div {
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Emojis em queda */
+  .emoji-bg {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .emoji-bg span {
+    position: absolute;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+  }
+  
+  .emoji-bg span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .emoji-bg span:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+  }
+  
+  .emoji-bg span:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+  }
+  
+  .emoji-bg span:nth-child(4) {
+    left: 70%;
+    animation-delay: 6s;
+  }
+  
+  .emoji-bg span:nth-child(5) {
+    left: 90%;
+    animation-delay: 8s;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(50%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  
+  /* Estilo do quadrado de texto */
+  .text-box {
+    background-color: #222;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+  }
+  
+  .main-title {
+    text-align: center;
+    color: red;
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .section1, .section2, .section3 {
+      padding: 10px;  /* Diminui o padding para telas menores */
+    }
+  
+    .text-box {
+      max-width: 95%; /* Ajusta o quadrado de texto para usar mais a largura da tela */
+      padding: 15px;  /* Ajusta o padding para telas menores */
+    }
+  
+    .main-title {
+      font-size: 1.5em; /* Reduz o tamanho do título em telas pequenas */
+    }
+  
+    #timer {
+      flex-direction: column; /* Empilha os itens do cronômetro em dispositivos móveis */
+      gap: 10px; /* Menor espaçamento entre os itens */
+    }
+  
+    .emoji-bg span {
+      font-size: 2rem; /* Reduz o tamanho dos emojis em telas pequenas */
+    }
+  }
